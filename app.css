@@ -3,19 +3,13 @@ body {
     padding: 0;
 }
 
-nav {
-	background: #004273;
-	color: white;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	font-size: 20px;
-	text-transform: uppercase;
-	z-index: 99999;
-}
-
-.navbar {
+nav.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: auto;
+	height: 100px;
+    padding: 1em;
 	margin-bottom: 0px;
 	background: #004273;
 	color: white;
@@ -29,9 +23,29 @@ nav {
 }
 
 
+.navbar-brand {
+	float: initial;
+}
+
+.brand-container {
+	margin-right: 1em;
+}
+
+#navigation {
+
+	flex-grow: 2;
+
+}
 p {
-	display: block;
-	margin-top: 40px;
+	margin: 0;
+}
+
+a {
+	color: #ffffff;
+}
+
+a.collapsed {
+	color: #003366;
 
 }
 
@@ -57,17 +71,12 @@ p {
 	color: white;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
            url("img/header.jpg");
-	height: 500px;
+	height: 550px;
 	text-align: left;
 	line-height: 200px;
 	padding-top: 170px;
 }
 
-.site_buttons {
-	padding: 50px;
-
-
-}
 .colored-block {
         width: 100%;
         padding: 30px 0px;
@@ -80,14 +89,40 @@ p {
 	color:white;
 }
 
+.white { 
+
+	background: #ffffff; 
+	color:black;
+}
+
 .service-box {
 	padding: 30px;
 	margin-bottom: 30px;
 
 }
 
-#project-box {
-	padding: 10px;
-	margin-bottom: 10px;
+.btn-github {
+	background-color: #ffffff;
+	color: #004273;
+}
 
+.collaborate {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 30px;
+
+}
+
+.project-box {
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+#littlebox {
+	padding: 30px;
+
+}
+
+img.img-responsive {
+	display: inline-block;
 }
