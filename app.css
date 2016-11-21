@@ -123,6 +123,12 @@ a.collapsed {
 
 }
 
+#contact {
+	padding: 30px;
+	margin-bottom: 30px;
+
+}
+
 img.img-responsive {
 	display: inline-block;
 }
