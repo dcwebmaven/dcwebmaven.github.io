@@ -7,24 +7,29 @@
         <script src="app.js"></script>
 
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="app.css">
+        <link rel="stylesheet" type="text/css" href="css/gallery.css">
     </head>
 
     <body>
-        <nav class="navbar" role="navigation">
+        <nav class="navbar col-sm-12" role="navigation">
+            <div class="navbar-header">                
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-            <div>
-                <a href="http://commerce.gov" class="brand-container">
-                    <img src="https://www.commerce.gov/sites/all/themes/doc/doc_theme/logo.png" alt="site-logo" height="80" width="80">
-                </a>
-
-                <span>commerce data service</span>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navigation">
+              <a href="http://commerce.gov" class="brand-container">
+              <img src="https://www.commerce.gov/sites/all/themes/doc/doc_theme/logo.png" alt="site-logo" height="80" width="80"></a>
+              <span><a href="http://commerce.gov/dataservice">commerce data service</a></span>
+        </div>
+         <div class="navbar-collapse collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.html#projects">Our Work</a></li>
+                  <li class="active"><a href="index.html#projects">Our Work</a></li>
                   <li><a href="team.html">Team</a></li>
                   <li><a href="careers.html">Jobs</a></li>
                   <li><a href="index.html#contact">Contact</a></li>
@@ -32,27 +37,108 @@
             </div>
         </nav>
 
-        <div class="jumbotron"> 
-
+        <div class="jumbotron">
                         <img style="float:right; padding: 0px 0px 0px 0px" src="img/hiring.png" alt="We're Hiring!" class="img-responsive"> 
                     
                         <h1>COMMERCE DATA SERVICE</h1>
-                        <h2>Build great data-driven solutions.</h2>
+                        <h2>Building great data-driven solutions.</h2>
          </div>
 
 
-		<div class="container-fluid">
-	     	<div class="row" id="teamBios" style="padding:50px 0px">
-	        	<div class="  ">
-	                	<div class="col-lg-12 col-md-12 col-sm-12 text-center   boxer">
-	                  		<h2 class="usability our-team-title">Who We Are</h2>
-	    
-	                	</div>
-	        		</div>
+<div class="container-fluid">
 
-	        	</div>
+        <div class="row" style="background: #004273; padding:50px 0px;">
 
-	    	</div>
-	    </div>
-	    </body>
+             <div class="row">
+                <h2 style="color: white; text-align: center;">Our Team</h2>
+                <!--
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                        <fieldset>
+                            <button class="filter" data-filter=".dev">Engineering</button>
+                            <button class="filter" data-filter=".datasci">Data Science</button>
+                            <button class="filter" data-filter=".lead">Leadership</button>
+                            <button class="filter" data-filter=".edu">Education</button>
+                            <button class="filter" data-filter=".office">Operations</button>
+                        </fieldset>
+                        <button id="Reset" style="background:darkred;color:white">Clear Filters</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="row" style="background: #004273; padding:50px 0px;">
+            <div class="gallery cf">
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/jeff.png" alt="Jeff Chen"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/Burton.jpg" alt="Burton Reist"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/ian.png" alt="Ian Kalin"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/Karolina.png" alt="Karolina Hamilton"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/mark.png" alt="Mark Brown II"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/natassja.png" alt="Natassja Linzau"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/pam.png" alt="Pam Moulder"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/pri.png" alt="Priyanka Oberoi"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/radhika.png" alt="Radhika Bhatt"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/sasan.png" alt="Sasan Bahadaran"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/star.png" alt="Star Ying"/>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb text-center">
+                    <img class="img-responsive img-centered img-circle" src="mixitup/BioPics/tonja.png" alt="Tonja White"/>
+                  </div>
+            </div>
+        </div>
+</div>
+            
+
+
+<!--Modal
+
+            <div class="wrap">
+
+                 
+                      
+
+                    <a href="#modal-one" class="btn btn-big">Modal!</a>
+  
+            </div>
+ 
+                    
+                    <div class="modal" id="modal-one" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-header">
+                          <h2>Modal in CSS?</h2>
+                          <a href="#close" class="btn-close" aria-hidden="true">×</a> 
+                        </div>
+                        <div class="modal-body">
+                          <p>One modal example here! :D</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#close" class="btn">Nice!</a> 
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    -->
+
+
+   	    </div>
+	</body>
 </html>
